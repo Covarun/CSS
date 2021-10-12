@@ -1,0 +1,857 @@
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
+}
+
+.button {
+    border-radius: 1000px;
+}
+
+#customizeButton {
+    background-color: white!important;
+    color: aqua;
+}
+
+.chatitem {
+    padding: 10px;
+    background-color: transparent;
+    max-width: 500px;
+    text-align: center;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 100px;
+}
+
+#chatList {
+    text-align: center;
+    width: 341px;
+}
+
+#chatInput {
+    width: 300px;
+    text-align: center;
+    border-radius: 100px;
+    line-height: 3;
+    color: aqua;
+}
+
+.newsIMG {
+    width: 0px;
+    max-width: 0px;
+    height: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    object-fit: none;
+    cursor: default;
+    border-radius: 0px;
+}
+
+#newsBody {
+    overflow-y: 0px;
+    overflow-x: 0px;
+    height: 0px;
+    min-width: 0px;
+}
+
+#newsStat {
+    position: 0px;
+    right: 0px;
+    bottom: 0;
+    color: #fff;
+    background: rgb(0 0 0 / 0%);
+    font-size: 0px;
+    line-height: 0px;
+    z-index: 0;
+    padding: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top-left-radius: 0px;
+    color: rgba(255,255,255,.5);
+}
+
+#newsHed {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 0px;
+    line-height: 0px;
+    text-align: center;
+    background-image: linear-gradient(to right,#fbc02d,#FF6A0B);
+    z-index: 0;
+    padding: 0px;
+    padding-right: 0px;
+    border-top-right-radius: 0px;
+}
+
+#newsHolder {
+    pointer-events: all;
+    padding: 0px;
+    z-index: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: left;
+    font-size: 0px;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,.5);
+}
+
+#streamContainer {
+    pointer-events: all;
+    text-align: none;
+    font-size: 0px;
+    color: rgb(255 255 255 / 0%);
+    background-color: rgba(0,0,0,.5);
+    padding: 0px;
+    border-radius: 0px;
+    min-width: 0px;
+}
+
+.streamItem {
+    margin-top: 0;
+    cursor: default;
+    pointer-events: none;
+}
+
+.youNewDiv {
+    margin-top: 0px;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 0px;
+    border-radius: 0px;
+    min-width: 0px;
+    cursor: default;
+    pointer-events: all;
+}
+
+#helpTxtHol {
+    display: none;
+    vertical-align: top;
+    color: #fff;
+    margin-left: 0px!important;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#helpPIcon {
+    width: 0px;
+    height: 0px;
+    margin-top: -0px;
+    margin-left: -0px;
+    margin-bottom: -0px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 0px;
+}
+
+#updateAdIcon {
+    display: inline-block;
+    color: #fff;
+    line-height: 0px;
+    width: 0px;
+    height: 0px;
+    text-align: center;
+    margin-top: -0px;
+    margin-left: -0px;
+    margin-bottom: -0px;
+    border-radius: 0px;
+    background-image: url(../img/news.png);
+    background-size: cover;
+}
+
+* {
+    outline: none;
+    font-family: gamefont;
+    color: #35353500;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#newsHolder, #tlInfHold, #seasonLabel, #aHolder, #termsInfo,
+#editorBtnM, #onetrust-consent-sdk, #mapInfo {
+    visibility:hidden!important;
+    display:none!important;
+}
+
+.button.small {
+    height: 40px;
+    line-height: 45px;
+    padding-top: 5px!important;
+    padding-bottom: 13px!important;
+    padding-left: 22px!important;
+    padding-right: 22px!important;
+    font-size: 20.5px!important;
+    margin-left: 3px;
+    margin-right: 3px;
+    bottom: -100px
+}
+
+.discordSocial {
+    display:none!important;
+}
+
+.redditSocial {
+    display:none!important;
+}
+
+.verticalSeparator {
+    display:none!important
+}
+
+#gameNameHolder:hover #mainLogo {
+    /*content: url(https://cdn.discordapp.com/attachments/570906904713363457/806408830098997288/timp.gif);*/
+}
+
+#gameNameHolder {
+    pointer-events: all;
+    font-size: 0;
+    color: transparent;
+    transition: 0.5s;
+}
+
+#gameNameHolder:hover {
+    font-size: 36px;
+    color: #02f9ed;
+}
+
+#gameNameHolder::after {
+    content: "css by Covarun";
+    display: block;
+    font-family: 'Poppins';
+}
+
+#healthValueHolder {
+    position: fixed;
+    right: calc(50% + 128px);
+    bottom: 30px;
+    background-color: transparent;
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+#healthValue {
+    font-size: 64px;
+    color: #e3e3e3; !important
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+#maxHP {
+    display: none;
+}
+
+#healthBar {
+    position: fixed;
+    width: 200px;
+    display: flex;
+    direction: rtl;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12px;
+    bottom: 30px;
+    right: calc(50% + 128px);
+    background-color: transparent;
+}
+ 
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin-right: -1px;
+    background-color: transparent;
+}
+
+.hpBSeg {
+    box-shadow: none;
+}
+
+#healthValueHolder {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: calc(50% - 132px);
+    bottom: 34px;
+    left: 830px;
+    background-color: transparent;
+}
+
+#healthValue {
+    color: aqua;
+    font-size: 64px;
+    text-shadow: 0px 0px var(--accent);
+    filter: drop-shadow(2px 2px var( --accent)) drop-shadow(-2px -2px var(--accent)) drop-shadow(-2px 2px var(--accent)) drop-shadow(2px -2px var(--accent));
+    bottom: 100%;
+}
+
+#healthValue::after {
+    content: "HP";
+    font-size: 24px;
+    margin-left: 76px;
+    color: var(--hp-ammo);
+    text-shadow: 4px 2px var(--accent);
+
+}
+
+#maxHP {
+    display: none;
+}
+
+#challIcon {
+    display: none;
+}
+
+#healthBar {
+    width: 280px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0;
+    position: fixed;
+    left: calc(50% - 140px);
+    bottom: 40px;
+    outline: 6px solid var(--hp-ammo);
+}
+
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin: 0 -1px;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.hpBSeg {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#hiddenClasses {
+    display: flex !important;
+    flex-direction:row;
+    position:fixed;
+    left:50%;
+    bottom:10%;
+    transform: translate(-50%,-50%);
+    margin-right: 10px;
+}
+#menuClassPicker0[onclick="selectClass(0)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_0.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker1[onclick="selectClass(1)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_1.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker2[onclick="selectClass(2)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_2.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker3[onclick="selectClass(3)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_3.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker4[onclick="selectClass(4)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_4.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker4[onclick="selectClass(4)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker5[onclick="selectClass(5)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_5.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker6[onclick="selectClass(6)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_6.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker7[onclick="selectClass(7)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_7.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker8[onclick="selectClass(8)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_8.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker8[onclick="selectClass(8)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker9[onclick="selectClass(9)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_9.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker9[onclick="selectClass(9)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker10[onclick="selectClass(10)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_10.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker10[onclick="selectClass(10)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker11[onclick="selectClass(11)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_11.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker11[onclick="selectClass(11)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker12[onclick="selectClass(12)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_12.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker13[onclick="selectClass(13)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_13.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker13[onclick="selectClass(13)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker14[onclick="selectClass(14)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_14.png?build=uLz7w);    
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker14[onclick="selectClass(14)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassContainer {
+    transform: unset;
+}
+
+#menuClassNameTag {
+    display: none;
+}
+
+#bubbleContainer {
+    display: none;
+}
+
+#menuClassName, #menuClassSubtext {
+    text-shadow: none;
+}
+
+#menuClassName {
+    font-size: 28px;
+}
+
+#menuClassSubtext {
+    color: var(--accent);
+}
+
+#customizeButton {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    right: 80px;
+    bottom: 50%;
+    transform: translateY(75%);
+    font-size: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+#customizeButton .material-icons {
+    display: none;
+}
+
+/*Loadout*/
+
+#loadoutSelect {
+    background-color: rgba(255,255,255,0.15) !important;
+    border-radius: 16px !important;
+}
+
+#loadoutName {
+    background-color: transparent !important;
+    border-radius: 0;
+    border-bottom: 4px solid var(--accent) !important;
+}
+
+.settText, .wepLink {
+    color: var(--accent);
+}
+
+.wepLink[style="color:#2196F3"] {
+    color: var(--accent) !important;
+}
+
+.skinColorItem {
+    width: 24px;
+    height: 24px;
+    border: none;
+}
+
+.premiumSkinCol {
+    font-size: 28px !important;
+    margin-top: -2px;
+    color: var(--accent) !important;
+}
+
+/*Class and Skin Card*/
+
+.classCard {
+    text-shadow: none;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    height: 228px;
+    line-height: 28px;
+    font-size: 0;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover {
+    font-size: 28px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.classWeap {
+    font-size: 0;
+    height: 0;
+}
+
+.classImgC {
+    margin-top: 12px;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover img {
+    opacity: unset;
+    transform: unset;
+}
+
+.classXPBar {
+    top: unset;
+    bottom: 0;
+    width: -webkit-fill-available;
+    left: -0;
+    height: 4px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.clsXPBarC {
+    margin: 0;
+    height: 4px;
+    background-color: var(--accent);
+}
+
+.skinCard[style*="#292929"], .noBtnCard[style*="#292929"] {
+    text-shadow: 0 0 2px var(--accent), 0 0 4px var(--accent);
+}
+
+.skinCard, .noBtnCard {
+    border-radius: 8px;
+    border-width: 0 !important;
+    border-bottom-width: 4px !important;
+    background-color: rgba(255,255,255,0.15);
+    width: 155px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skinCard.blackShad {
+    text-shadow: none;
+}
+
+.noBtnCard {
+    width: 145px;
+}
+
+.sprayImg {
+    margin-left: 20px;
+}
+
+#endAContainer {
+   display: none!important;
+}
+
+#timerDisplay {
+    position: fixed;
+    left: 50%;
+    bottom: 91%;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+
+.endCard {
+    padding: 10px;
+    background-color: rgba(0,0,0,.5);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 6px;
+    height: min-content;
+    display: inline-block;
+    vertical-align: top;
+    max-height: 100%;
+    min-width: 100%;
+    border-radius: 1000px;
+    color: cyan;
+}
+
+#endTabbedView {
+    min-width: 1000px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 1000px;
+}
+
+#endTable {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border-radius: 6px;
+    overflow-y: auto;
+    height: min-content;
+    vertical-align: top;
+    max-height: 100%;
+    background-color: rgba(0,0,0,.2);
+    display: table;
+    border-spacing: 0;
+    border-radius: 1000px;
+}
+
+#instructionsUpdate {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    color: rgba(255,255,255,.8);
+    font-size: 32px;
+    background-color: #244144;
+    padding: 5px;
+    width: 600px;
+    border-radius: 1000px;
+}
+
+#botRightHider #weapDisplay {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 300px;
+  height: 50px;
+  left: 1750px;
+  -webkit-transform: translate(5px, 70px);
+          transform: translate(5px, 70px);
+  z-index: 799;
+}
+
+#botRightHider #weapDisplay .weapItem {
+  width: auto;
+  height: 100%;
+  -webkit-transition: opacity 280ms;
+  transition: opacity 280ms;
+}
+
+#botRightHider #weapDisplay .weapItem image {
+  -webkit-transition: all 280ms;
+  transition: all 280ms;
+}
+
+#botRightHider #weapDisplay .weapItem .weapIcon {
+  width: 70px;
+  height: auto;
+  opacity: 0.3 !important;
+  -webkit-transition: all 280ms;
+  transition: all 280ms;
+}
+
+#botRightHider #weapDisplay .weapItem .weapKey {
+  display: none;
+}
+
+#botRightHider #weapDisplay #weapItem_0 .weapIcon[style="opacity: 1;"],
+#botRightHider #weapDisplay #weapItem_0 .weapIcon[style="opacity:1"] {
+  opacity: 0.8 !important;
+  -webkit-filter: contrast(3.5);
+          filter: contrast(3.5);
+  -webkit-transform: translate(30px, -50px) scale(1.6);
+          transform: translate(30px, -50px) scale(1.6);
+}
+
+#botRightHider #weapDisplay #weapItem_1 .weapIcon[style="opacity: 1; margin-right: 25px;"] {
+  opacity: 0.8 !important;
+  -webkit-filter: contrast(3.5);
+          filter: contrast(3.5);
+  -webkit-transform: translate(-50px, -40px) scale(1.5);
+          transform: translate(-50px, -40px) scale(1.5);
+}
+
+#botRightHider #weapDisplay #weapItem_2 .weapIcon[style="opacity: 1; margin-right: 25px;"] {
+  opacity: 0.8 !important;
+  -webkit-filter: contrast(3.5);
+          filter: contrast(3.5);
+  -webkit-transform: translate(-120px, -40px) scale(1.6);
+          transform: translate(-120px, -40px) scale(1.6);
+}
+
+@-webkit-keyframes breathe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#reloadMsg {
+  position: absolute;
+  left: unset;
+  top: unset;
+  bottom: 130px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-family: var(--mainFont);
+}
+
+#reloadMsg::after {
+  -webkit-animation: breathe 1s infinite alternate;
+          animation: breathe 1s infinite alternate;
+  content: "report_problem";
+  font-size: 40px;
+  font-family: "Material Icons";
+  position: absolute;
+  left: unset;
+  top: unset;
+  bottom: 5.5px;
+  right: 10px;
+}
+
+#bottomRight {
+  width: 304px;
+  border-radius: 7px;
+}
+
+#ammoDisplay {
+  background-color: transparent;
+}
+
+#mainLogo {
+    content: url(https://cdn.discordapp.com/attachments/896050651296051230/897337928370487326/logo_1.png);
+    width: 300px;
+    height: 300px;
+    transition: width 1s, height 1s;
+}
