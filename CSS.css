@@ -2,6 +2,11 @@
     font-family: gamefont;
     src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
 }
+:root {
+    --accent:#009371;
+    --ingame-bg:#e7830300;
+    --text-shadow:2px 2px 3px black;
+}
 
 .button {
     border-radius: 1000px;
@@ -33,6 +38,39 @@
     border-radius: 100px;
     line-height: 3;
     color: aqua;
+}
+
+#chatHolder {
+  left: 300px;
+}
+
+#chatHolder {
+    transition-duration:0.3s;
+}
+
+#uiBase.onGame #chatHolder {
+    bottom:180px !important;
+}
+
+.chatItem {
+    font-size:20px;
+    color:#fff;
+    background-color:transparent !important;
+}
+
+
+#chatInput::placeholder {
+    color:var(--accent);
+}
+
+.chatMsg {
+    color:var(--accent);
+    font-size:20px;
+}
+
+.weaponChatIcon,.meleeChatIcon,.thrownChatIcon,.fistChatIcon,.headShotChatIcon,.streakChatIcon {
+    filter:brightness(0) drop-shadow(4px 4px var(--accent)) drop-shadow(-4px -4px var(--accent));
+    opacity:1 !important;
 }
 
 .newsIMG {
@@ -271,7 +309,7 @@
     position: relative;
     left: calc(50% - 132px);
     bottom: 34px;
-    left: 830px;
+    left: 1060px;
     background-color: transparent;
 }
 
@@ -540,21 +578,17 @@
 }
 
 #customizeButton {
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    right: 80px;
-    bottom: 50%;
-    transform: translateY(75%);
-    font-size: 0 !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
+    opacity:0;
+    position:fixed;
+    right:60px;
+    top:34%;
+    height:450px;
+    text-shadow:-1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020;
 }
 
-#customizeButton .material-icons {
-    display: none;
+#customizeButton:hover {
+    transform:none;
 }
-
 /*Loadout*/
 
 #loadoutSelect {
@@ -743,7 +777,7 @@
           justify-content: flex-start;
   width: 300px;
   height: 50px;
-  left: 1750px;
+  left: 1910px;
   -webkit-transform: translate(5px, 70px);
           transform: translate(5px, 70px);
   z-index: 799;
@@ -850,8 +884,155 @@
 }
 
 #mainLogo {
-    content: url(https://cdn.discordapp.com/attachments/896050651296051230/897337928370487326/logo_1.png);
-    width: 300px;
-    height: 300px;
+    content: url(https://media.discordapp.net/attachments/896050651296051230/898317099431235645/Covaruns_Krunker_Logo.PNG?width=721&height=406);
     transition: width 1s, height 1s;
+    top: 10000px;
+}
+
+#mapInfo:before {
+    content:"My Twitch";
+    font-size: 20px;
+    margin-right: 20px;
+    color: #099b80;
+    cursor: pointer;
+}
+#mapInfo:hover:before {
+    content:"twitch.tv/13AAM";
+    font-size: 24px;
+    margin-right: 20px;
+    color: #00ffe7;
+}
+
+#mLevelContV,#mailIcon {
+    color:var(--accent) !important;
+}
+
+#mailIcon:hover {
+    opacity:1;
+    transform:scale(1.1);
+}
+
+}
+/* HeaderBarLeft */
+
+
+#subLogoButtons {
+    bottom: 72px;
+    transform: translate(-50%,0);
+}
+
+#subLogoButtons>.button {
+    padding: 0 !important;
+    margin: 0 16px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 24px !important;
+    transition-duration: 0.25s;
+}
+
+#subLogoButtons>.button:hover {
+    transform: unset;
+    color: var(--accent);
+}
+
+#menuItemContainer {
+    flex-direction: row;
+    top: unset;
+    bottom: 20px;
+    left: 50%;
+    width: unset;
+    background-color: transparent;
+    transform: translateX(-50%)
+}
+
+#menuItemContainer > div > span {
+    display: none;
+}
+
+.menuItem {
+    background-color: transparent;
+    margin: 0 16px;
+}
+
+.menuItem:hover {
+    border-left: none;
+}
+
+.menuItem .menuItemIcon {
+    display: none;
+}
+
+#policeButton {
+    margin-right: 10px;
+    margin-left: -80px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 16px;
+    left: -159px;
+    top: -50px;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 1px;
+}
+
+#uiBase.onMenu #voiceDisplay {
+    left: 330px;
+    bottom: 20px;
+}
+
+.buttonP {
+    top: 50px;
+    border: transparent!important;
+}
+
+.buttonR {
+    top: 50px;
+    border: transparent!important;
+}
+
+.buttonO {
+    top: 50px;
+    border: transparent!important;
+}
+
+.buttonPI {
+    top: 50px;
+    border: transparent!important;
+}
+
+#hudClassIcon {
+    display: none;
+}
+
+#uiBase.onGame #voiceDisplay {
+    left: 330px;
+    bottom: 27px;
+}
+
+#uiBase.onGame #chatHolder {
+    left: 0px;
+    top: 66%;
+}
+
+#mLevelContV {
+    font-size:20px;
+}
+
+#mLevelContV,#mailIcon {
+    color:var(--accent) !important;
+}
+
+#mailIcon:hover {
+    opacity:1;
+    transform:scale(1.1);
+}
+
+.bigMFeatBarI {
+  display: none!important;
+}
+
+.headerBarLeft,#mLevelCont {
+    background-color:transparent;
 }
