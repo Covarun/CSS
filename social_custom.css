@@ -61,3 +61,70 @@ html, body {
     background-color: transparent;
     color: cyan;
 }
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
+}
+html, body {
+    background-image: url(https://i.gifer.com/3Q6b.gif);
+    background-size: 1370px;
+}
+
+#androidDB {
+    display: none!important;
+}
+
+#iosDB {
+    display: none!important;
+}
+
+#steamDB {
+    display: none!important;
+}
+
+#aContainer {
+    display: none!important;
+}
+
+#rightABox {
+    display: none!important;
+}
+
+#editrDB {
+    display: none!important;
+}
+
+.bigMFeatHold {
+    display: none!important
+}
+
+.bigMFeatVid {
+    display: none!important;
+}
+
+#leftBox {
+    display: none!important;
+}
+
+#marketList {
+    margin-top: -5px;
+    height: calc(100% - 1px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.marketCard {
+    border-radius: 50px;
+}
+
+.marketPrice {
+    position: absolute;
+    left: 60px;
+    background-color: transparent;
+    color: cyan;
+}
+
+aHolder {
+    display: none;
+}
